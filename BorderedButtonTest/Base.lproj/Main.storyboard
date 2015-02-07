@@ -16,47 +16,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKF-lc-aYW">
-                                <rect key="frame" x="276" y="104" width="51" height="31"/>
-                                <connections>
-                                    <action selector="toggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="k8k-cK-Fz8"/>
-                                </connections>
-                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwl-fo-cvj">
-                                <rect key="frame" x="240" y="28" width="120" height="32"/>
+                                <rect key="frame" x="239" y="28" width="123" height="32"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" title="Standard Button"/>
+                                <state key="normal" title="UIButton|System"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afS-tN-2QW" customClass="BorderedButton">
-                                <rect key="frame" x="241" y="68" width="119" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmz-Vg-si8">
+                                <rect key="frame" x="239" y="104" width="123" height="32"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                <state key="normal" title="Custom Button">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIButton|System">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="disabled">
-                                    <color key="titleColor" white="0.39000000000000001" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afS-tN-2QW" customClass="BorderedButton">
+                                <rect key="frame" x="209" y="68" width="182" height="28"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" title="BorderedButton|System"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="-1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsh-Ex-9vw" customClass="BorderedButton">
+                                <rect key="frame" x="208" y="144" width="185" height="28"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <state key="normal" title="BorderedButton|Custom">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xB-7c-l66">
+                                <rect key="frame" x="289" y="219" width="22" height="22"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNb-mg-Zgq"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKF-lc-aYW">
+                                <rect key="frame" x="276" y="180" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="k8k-cK-Fz8"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="afS-tN-2QW" secondAttribute="centerX" id="013-dD-ajd"/>
+                            <constraint firstItem="wKF-lc-aYW" firstAttribute="top" secondItem="jsh-Ex-9vw" secondAttribute="bottom" constant="8" symbolic="YES" id="3W5-QZ-vFU"/>
+                            <constraint firstItem="Rmz-Vg-si8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Wo-iu-quO"/>
                             <constraint firstItem="afS-tN-2QW" firstAttribute="top" secondItem="Dwl-fo-cvj" secondAttribute="bottom" constant="8" symbolic="YES" id="9wy-px-sPp"/>
                             <constraint firstAttribute="centerX" secondItem="Dwl-fo-cvj" secondAttribute="centerX" id="BjL-Rk-xD3"/>
+                            <constraint firstItem="jsh-Ex-9vw" firstAttribute="top" secondItem="Rmz-Vg-si8" secondAttribute="bottom" constant="8" symbolic="YES" id="BjS-g5-m0w"/>
                             <constraint firstItem="Dwl-fo-cvj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="D48-0T-ydH"/>
-                            <constraint firstItem="wKF-lc-aYW" firstAttribute="top" secondItem="afS-tN-2QW" secondAttribute="bottom" constant="8" symbolic="YES" id="h7l-Im-LDf"/>
+                            <constraint firstItem="6xB-7c-l66" firstAttribute="top" secondItem="wKF-lc-aYW" secondAttribute="bottom" constant="8" symbolic="YES" id="YKj-8Q-b9x"/>
+                            <constraint firstItem="6xB-7c-l66" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOn-hZ-29I"/>
+                            <constraint firstItem="jsh-Ex-9vw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aYU-TO-seb"/>
+                            <constraint firstItem="Rmz-Vg-si8" firstAttribute="top" secondItem="afS-tN-2QW" secondAttribute="bottom" constant="8" symbolic="YES" id="iBs-M1-Krd"/>
                             <constraint firstAttribute="centerX" secondItem="wKF-lc-aYW" secondAttribute="centerX" id="lMq-pd-Wdb"/>
                         </constraints>
                     </view>

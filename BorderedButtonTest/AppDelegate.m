@@ -2,9 +2,6 @@
 //  AppDelegate.m
 //  BorderedButtonTest
 //
-//  Created by Mike Laster on 2/6/15.
-//
-//
 
 #import "AppDelegate.h"
 

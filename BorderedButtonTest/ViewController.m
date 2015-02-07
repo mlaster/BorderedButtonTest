@@ -2,7 +2,6 @@
 //  ViewController.m
 //  BorderedButtonTest
 //
-//
 
 #import "ViewController.h"
 
@@ -24,6 +23,20 @@
         self.standardButton.enabled = sender.isOn;
         self.customButton.enabled = sender.isOn;
     });
+}
+- (IBAction)showAlert:(UIButton *)sender {
+    UIAlertController *ac = nil;
+    UIAlertAction *defaultAction = nil;
+
+    ac = [UIAlertController alertControllerWithTitle:@"Alert" message:nil preferredStyle:UIAlertControllerStyleAlert];
+
+    defaultAction = [UIAlertAction actionWithTitle:@"OK"
+                                             style:UIAlertActionStyleDefault
+                                           handler:^(UIAlertAction * action) {}];
+
+    [ac addAction:defaultAction];
+    [self presentViewController:ac animated:YES completion:nil];
+
 }
 
 @end
