@@ -11,11 +11,13 @@
 @implementation BorderedButton
 
 - (void)awakeFromNib {
+    NSParameterAssert(self.buttonType == UIButtonTypeCustom);
     [super awakeFromNib];
     [self _bbUpdateLayer];
 }
 
 - (void)prepareForInterfaceBuilder {
+    NSParameterAssert(self.buttonType == UIButtonTypeCustom);
     [super prepareForInterfaceBuilder];
     [self _bbUpdateLayer];
 }
@@ -41,19 +43,18 @@
     if (self.isEnabled == NO) {
         UIColor *disabledColor = [self titleColorForState:UIControlStateDisabled];
 
-        self.layer.borderColor = disabledColor != nil ? [[disabledColor colorWithAlphaComponent:0.2] CGColor] : [[[self titleColorForState:UIControlStateNormal] colorWithAlphaComponent:0.2] CGColor];
-        self.layer.borderColor = disabledColor != nil ? [[disabledColor colorWithAlphaComponent:0.2] CGColor] : [[[self titleColorForState:UIControlStateNormal] colorWithAlphaComponent:0.2] CGColor];
-        self.titleLabel.textColor = [UIColor redColor];
-        [self.titleLabel setNeedsDisplay];
+        self.layer.borderColor = disabledColor != nil ? [disabledColor CGColor] : [[self titleColorForState:UIControlStateNormal] CGColor];
     } else if (self.isHighlighted) {
         UIColor *highlightedColor = [self titleColorForState:UIControlStateHighlighted];
 
-        self.layer.borderColor = highlightedColor != nil ? [[highlightedColor colorWithAlphaComponent:0.2] CGColor] : [[[self titleColorForState:UIControlStateNormal] colorWithAlphaComponent:0.2] CGColor];
+        self.layer.borderColor = highlightedColor != nil ? [highlightedColor CGColor] : [[self titleColorForState:UIControlStateNormal] CGColor];
     } else {
-        CABasicAnimation *animation = [CABasicAnimation animation];
-        animation.duration = 0.213;
-
-        [self.layer addAnimation:animation forKey:@"borderColor"];
+//        static CGFloat const UIButtonColorAnimationDuration = 0.215; // From UIButton.m
+//
+//        CABasicAnimation *animation = [CABasicAnimation animation];
+//        animation.duration = UIButtonColorAnimationDuration;
+//
+//        [self.layer addAnimation:animation forKey:@"borderColor"];
         self.layer.borderColor = [[self titleColorForState:UIControlStateNormal] CGColor];
     }
 
