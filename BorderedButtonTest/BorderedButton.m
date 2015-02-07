@@ -34,6 +34,7 @@
     [super layoutSubviews];
 }
 - (void)_bbUpdateLayer {
+
     self.layer.borderWidth = self.borderWidth;
     self.layer.cornerRadius = self.cornerRadius;
 
@@ -49,12 +50,11 @@
 
         self.layer.borderColor = highlightedColor != nil ? [[highlightedColor colorWithAlphaComponent:0.2] CGColor] : [[[self titleColorForState:UIControlStateNormal] colorWithAlphaComponent:0.2] CGColor];
     } else {
-        [UIView animateWithDuration:1.5
-                              delay:0.0
-                            options:UIViewAnimationOptionBeginFromCurrentState
-                         animations:^{
-                             self.layer.borderColor = [[self titleColorForState:UIControlStateNormal] CGColor];
-                         } completion:NULL];
+        CABasicAnimation *animation = [CABasicAnimation animation];
+        animation.duration = 0.213;
+
+        [self.layer addAnimation:animation forKey:@"borderColor"];
+        self.layer.borderColor = [[self titleColorForState:UIControlStateNormal] CGColor];
     }
 
 }

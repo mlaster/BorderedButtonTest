@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>032D5518-F419-42A3-A320-2AAE48AD8A41</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BorderedButtonTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>87781A8C24D77F3841FF6CC8BF31951CBF32EFDB</key>
+		<string>github.com:mlaster/BorderedButtonTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BorderedButtonTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>87781A8C24D77F3841FF6CC8BF31951CBF32EFDB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:mlaster/BorderedButtonTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>87781A8C24D77F3841FF6CC8BF31951CBF32EFDB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>87781A8C24D77F3841FF6CC8BF31951CBF32EFDB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BorderedButtonTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
